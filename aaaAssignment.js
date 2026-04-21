@@ -1,6 +1,3 @@
-const { isValidES3Identifier } = require("@babel/types");
-const test = require("node:test");
-
 
 function greet(name){
     return name || "Guest";
@@ -256,5 +253,5 @@ test('checks if multiple items can be aded to the array', () => {
     //Act
     const result = addItem(arr, [3,4,5]);
     //Assert
-    expect(result).toBe([1,2,5,4,5]);
+    expect(result).toBe([1,2,3,3,4,5]);
 });
